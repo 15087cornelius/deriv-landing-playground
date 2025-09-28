@@ -1,25 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deriv | Trading for Anyone, Anywhere, Anytime</title>
-    <meta name="description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support, widest range of products and markets." />
-    <meta name="author" content="Deriv" />
-    <meta name="keywords" content="trading, forex, binary options, deriv, online trading, financial markets" />
+    <meta name="description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support, widest range of products and markets.">
+    <meta name="author" content="Deriv">
+    <meta name="keywords" content="trading, forex, binary options, deriv, online trading, financial markets">
 
-    <meta property="og:title" content="Deriv | Trading for Anyone, Anywhere, Anytime" />
-    <meta property="og:description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Deriv | Trading for Anyone, Anywhere, Anytime">
+    <meta property="og:description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deriv | Trading for Anyone, Anywhere, Anytime">
+    <meta name="twitter:description" content="Trade with confidence on Deriv - the world's leading online trading platform.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=630&fit=crop">
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background overlay -->
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <span class="logo-text">Deriv</span>
+                    <span class="logo-years">| 25 years</span>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="nav-links" id="navLinks">
+                    <a href="https://deriv.com/trade/options" target="_blank" rel="noopener">Trading</a>
+                    <a href="https://deriv.com/trading-platforms/deriv-trader" target="_blank" rel="noopener">Platforms</a>
+                    <a href="http://traders-academy.deriv.com/" target="_blank" rel="noopener">Learning</a>
+                    <a href="https://deriv.com/why-choose-us" target="_blank" rel="noopener">About</a>
+                    <a href="https://deriv.com/partners" target="_blank" rel="noopener">Partners</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="nav-buttons">
+                    <a href="https://hub.deriv.com/tradershub" target="_blank" rel="noopener" class="btn btn-outline">Log in</a>
+                    <a href="https://hub.deriv.com/tradershub" target="_blank" rel="noopener" class="btn btn-primary">Sign up</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Trading for<br>
+                        <span class="gradient-text">Anyone</span><br>
+                        <span class="gradient-text">Anywhere</span><br>
+                        <span class="gradient-text">Anytime</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Widest range of products, markets, platforms with 24/7 customer support.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="https://hub.deriv.com/tradershub" target="_blank" rel="noopener" class="btn btn-primary btn-large glow-effect">
+                            Open account
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <div class="trading-card">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop&auto=format" 
+                             alt="Professional trading environment" 
+                             class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <footer class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <p class="trust-text">
+                    <span class="star">⭐</span>
+                    4.4 out of 5 based on 67,636 reviews 
+                    <span class="trustpilot">Trustpilot</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
