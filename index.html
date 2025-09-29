@@ -1,25 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deriv | Trading for Anyone, Anywhere, Anytime</title>
-    <meta name="description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support, widest range of products and markets." />
-    <meta name="author" content="Deriv" />
-    <meta name="keywords" content="trading, forex, binary options, deriv, online trading, financial markets" />
+    <meta name="description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support, widest range of products and markets.">
+    <meta name="keywords" content="trading, forex, binary options, deriv, online trading, financial markets">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Deriv | Trading for Anyone, Anywhere, Anytime">
+    <meta property="og:description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support.">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="https://deriv.com/logo.svg" alt="Deriv Logo" class="logo">
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#markets" class="nav-link">Markets</a>
+                <a href="#platforms" class="nav-link">Platforms</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-outline" id="login-btn">Log in</a>
+                <a href="#" class="btn btn-primary" id="signup-btn">Sign up</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <meta property="og:title" content="Deriv | Trading for Anyone, Anywhere, Anytime" />
-    <meta property="og:description" content="Trade with confidence on Deriv - the world's leading online trading platform. 25 years of experience, 24/7 support." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Trading Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Trading for <span class="gradient-text">Anyone</span>,<br>
+                <span class="gradient-text">Anywhere</span>, <span class="gradient-text">Anytime</span>
+            </h1>
+            <p class="hero-description">
+                Trade with confidence on the world's leading online trading platform. 
+                Join millions of traders worldwide with 25+ years of experience.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-large" id="hero-signup">Start Trading Now</a>
+                <a href="#" class="btn btn-outline btn-large">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Features Section -->
+    <section class="features" id="markets">
+        <div class="container">
+            <h2 class="section-title">Why Choose Deriv?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="25+ Years Experience">
+                    </div>
+                    <h3>25+ Years Experience</h3>
+                    <p>Trusted by millions of traders worldwide with a proven track record of excellence.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="24/7 Support">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support in multiple languages to assist you anytime.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135682.png" alt="Global Markets">
+                    </div>
+                    <h3>Global Markets</h3>
+                    <p>Access to forex, stocks, indices, commodities, and synthetic markets.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Secure Trading">
+                    </div>
+                    <h3>Secure Trading</h3>
+                    <p>Advanced security measures and regulatory compliance for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Trading Platforms Section -->
+    <section class="platforms" id="platforms">
+        <div class="container">
+            <h2 class="section-title">Our Trading Platforms</h2>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="DTrader Platform">
+                    <h3>DTrader</h3>
+                    <p>Our flagship platform for binary options and multipliers trading.</p>
+                    <a href="#" class="btn btn-outline">Try DTrader</a>
+                </div>
+                
+                <div class="platform-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="MT5 Platform">
+                    <h3>MetaTrader 5</h3>
+                    <p>Professional platform for forex, stocks, and indices trading.</p>
+                    <a href="#" class="btn btn-outline">Try MT5</a>
+                </div>
+                
+                <div class="platform-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="cTrader Platform">
+                    <h3>cTrader</h3>
+                    <p>Advanced platform with superior charting and trading tools.</p>
+                    <a href="#" class="btn btn-outline">Try cTrader</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Trading?</h2>
+                <p>Join millions of traders and start your trading journey today.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large" id="cta-signup">Create Free Account</a>
+                    <a href="#" class="btn btn-outline btn-large" id="cta-login">Log In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://deriv.com/logo.svg" alt="Deriv Logo" class="footer-logo">
+                    <p>Trading for anyone, anywhere, anytime.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">DTrader</a></li>
+                        <li><a href="#">MetaTrader 5</a></li>
+                        <li><a href="#">cTrader</a></li>
+                        <li><a href="#">Binary Options</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Markets</h4>
+                    <ul>
+                        <li><a href="#">Forex</a></li>
+                        <li><a href="#">Stocks</a></li>
+                        <li><a href="#">Indices</a></li>
+                        <li><a href="#">Commodities</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Deriv. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
